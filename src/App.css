@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for the main component */
+.main-component {
+  /* font-family: 'Poppins', sans-serif; */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-component h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-component nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.main-component nav li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main-component nav li:last-child {
+  margin-right: 0;
+}
+
+.main-component nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the creating form */
+.create-student-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-student-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.create-student-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.create-student-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for the dashboard table*/
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  /* Enables smooth scrolling on iOS */
+}
+
+.list-student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-student-table th,
+.list-student-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-student-table th {
+  background-color: #f2f2f2;
+}
+
+.list-student-table tbody tr:last-child td {
+  border-bottom: none;
+  /* Removes bottom border for the last row */
+}
+
+.list-student-table a,
+.list-student-table button {
+  display: block;
+  margin: 4px 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-student-table a {
+  width: 40px;
+}
+
+.list-student-table button {
+  background-color: #e7291b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.list-student-table button:focus {
+  outline: none;
+}
+
+.list-student-table a:not(:last-child),
+.list-student-table button:not(:last-child) {
+  margin-right: 4px;
+}
